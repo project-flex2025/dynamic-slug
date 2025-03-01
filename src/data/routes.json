@@ -1,0 +1,81 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "layout": "MainLayout",
+      "components": [
+        {
+          "type": "HeroSection",
+          "props": {
+            "title": "Welcome to My Site",
+            "subtitle": "Built dynamically with JSON"
+          }
+        },
+        {
+          "type": "FeatureList",
+          "props": { "features": ["Fast", "Scalable", "Dynamic"] }
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "layout": "DefaultLayout",
+      "components": [
+        {
+          "type": "Dashboard",
+          "props": { "text": "This is an about page powered by JSON Dashboard" }
+        },
+        {
+          "type": "ImageBanner",
+          "props": { "src": "/banner.jpg", "alt": "About Us" }
+        }
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "layout": "DashboardLayout",
+      "components": [
+        {
+          "type": "Dashboard",
+          "props": {
+            "title": "Total Employees",
+            "value": 123,
+            "icon": "fa-user-group"
+          }
+        },
+        {
+          "type": "Card",
+          "props": {
+            "title": "Total Employees",
+            "value": 123,
+            "icon": "fa-user-group"
+          }
+        },
+        {
+          "type": "Card",
+          "props": {
+            "title": "On Time",
+            "value": 1,
+            "icon": "fa-stopwatch"
+          }
+        },
+        {
+          "type": "Card",
+          "props": {
+            "title": "Absent",
+            "value": 3,
+            "icon": "fa-user-xmark"
+          }
+        },
+        {
+          "type": "Card",
+          "props": {
+            "title": "Late Arrival",
+            "value": 30,
+            "icon": "fa-hourglass"
+          }
+        }
+      ]
+    }
+  ]
+}
